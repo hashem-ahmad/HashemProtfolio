@@ -17,7 +17,7 @@ export default function About() {
         <p
           className={`${styles.pp} text-xl max-lg:text-base lg:text-base leading-relaxed max-2xl:text-lg 2xl:mt-10 lg:mt-3 max-lg:mt-3 max-md:text-base md:text-base 2xl:text-2xl max-sm:text-center`}
         >
-          I'm Hashem Ahmed, and I am a Jordanian software engineering student at{" "}
+          {"I'm Hashem Ahmed"}, and I am a Jordanian software engineering student at{" "}
           <span className={styles.goldText}>PUST</span>. This is my first
           semester at the university trip, and I am excited to begin this new
           chapter in my life. I look forward to building new friendships,
