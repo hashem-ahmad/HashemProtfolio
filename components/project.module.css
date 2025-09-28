@@ -1,0 +1,96 @@
+.Projects {
+  background-image: url("/photos/cartoon13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  padding-top: 6vh;
+  height: 120vh;
+}
+
+.BigHeader {
+  color: #10002b;
+  text-shadow: rgba(0, 0, 0, 0.9) 3px 6px 9px;
+}
+
+.paragraphcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 25px;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.8) 4px 4px 7px;
+}
+
+.paragraph {
+  color: #ccd6f6;
+  text-shadow: rgba(0, 0, 0, 0.9) 6px 6px 9px;
+  position: relative;
+  left: 30px;
+}
+
+.imagelink {
+  box-shadow: rgba(0, 0, 0, 0.9) 6px 6px 9px;
+}
+
+.projectTitle {
+  color: #ffffff;
+  filter: drop-shadow(2px 3px 4px rgb(0, 0, 0));
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  position: relative;
+  left: 60px;
+}
+
+.projectImage {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.9) 6px 6px 9px;
+}
+
+.header {
+  color: #ccd6f6;
+  filter: drop-shadow(2px 3px 4px rgb(0, 0, 0));
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+.projectcontainer {
+  height: 90vh;
+}
+
+@media only screen and (max-width: 640px) {
+  .Projects {
+    padding: 10px;
+    padding-top: 3vh;
+    height: auto;
+    background-position: top;
+  }
+
+  .paragraphcontainer {
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .paragraph {
+    left: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .projectTitle {
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .projectcontainer {
+    height: auto;
+  }
+}

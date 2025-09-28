@@ -1,0 +1,7 @@
+.logo-link {
+  color: #597bf8;
+  transition: color 0.2s ease-in-out;
+}
+.logo-link:hover {
+  color: #ffd900;
+}

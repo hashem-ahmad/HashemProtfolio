@@ -1,0 +1,59 @@
+.skills {
+  background-image: url("/photos/cartoon6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  padding-top: 10vh;
+  height: 100vh;
+}
+.header {
+  color: #ffffff;
+  text-shadow: rgba(132, 176, 202, 0.9) 3px 6px 9px;
+}
+.sliderContainer {
+  height: 65vh;
+}
+@keyframes vibrate-1-normal {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.cards:hover {
+  animation: vibrate-1-normal 2s ease 0s infinite normal none;
+}
+.cards {
+  width: 23vw;
+  height: 65vh;
+  justify-items: center;
+  box-shadow: rgba(0, 0, 0, 0.9) 6px 9px 9px;
+  margin: 15px;
+  transition: 2s;
+}
+@media only screen and (max-width: 768px) {
+  .cards {
+    width: 25vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .cards {
+    width: 60vw;
+  }
+}

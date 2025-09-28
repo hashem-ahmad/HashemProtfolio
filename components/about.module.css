@@ -1,0 +1,33 @@
+.about {
+  background-image: url("/photos/cartoon14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 20px;
+  padding-top: 15vh;
+}
+
+.pp {
+  font-family: "Fira Code", monospace;
+  color: #e0e1dd;
+  filter: drop-shadow(2px 3px 4px rgb(0, 0, 0));
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+.header {
+  color: #e0e1dd;
+  filter: drop-shadow(2px 3px 4px rgb(0, 0, 0));
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+.white-shadow {
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.4),
+    0 1.5px 8px 0 rgba(0, 0, 0, 0.08);
+}
+.goldText {
+  color: #eeba0b;
+}
+@media only screen and (max-width: 640px) {
+  .about {
+    padding-top: 5vh;
+  }
+}
