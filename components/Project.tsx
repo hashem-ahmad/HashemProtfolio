@@ -39,7 +39,7 @@ const data = [
   },
 ];
 
-function NextArrow(props: any) {
+function NextArrow(props: React.ComponentPropsWithoutRef<"div">) {
   const { onClick } = props;
   return (
     <div
@@ -51,7 +51,7 @@ function NextArrow(props: any) {
   );
 }
 
-function PrevArrow(props: any) {
+function PrevArrow(props: React.ComponentPropsWithoutRef<"div">) {
   const { onClick } = props;
   return (
     <div
