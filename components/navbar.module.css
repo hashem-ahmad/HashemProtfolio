@@ -1,7 +1,28 @@
+@keyframes vibrate-1-normal {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .logo-link {
   color: #597bf8;
   transition: color 0.2s ease-in-out;
 }
 .logo-link:hover {
   color: #ffd900;
+  animation: vibrate-1-normal 2s ease 0s infinite normal none;
 }
