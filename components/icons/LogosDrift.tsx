@@ -6,10 +6,16 @@ type LogosDriftProps =
 
 export function LogosDrift(props: LogosDriftProps) {
   if (props.as === "svg") {
-    const { as, ...svgProps } = props;
+    // Removed "as" because it's not used
+    const { /* as, */ ...svgProps } = props;
     return <svg {...svgProps}>{/* ... */}</svg>;
   }
-  const { as, ...headingProps } = props as { as: "h3" } & React.HTMLAttributes<HTMLHeadingElement>;
+
+  // Removed "as" here too
+  const { /* as, */ ...headingProps } = props as {
+    as: "h3";
+  } & React.HTMLAttributes<HTMLHeadingElement>;
+
   return <h3 {...headingProps}>HASHEM</h3>;
 }
 
