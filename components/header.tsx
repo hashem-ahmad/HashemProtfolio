@@ -32,7 +32,7 @@ function Header() {
             <h3
               className={` ${styles["drop-shadow"]} shadow-lg pointer-events-none font-roboto text-lg text-[36px] text-shadow-lg w-auto max-2xl:text-2xl`}
             >
-              Software Engineer test
+              Software Engineer
             </h3>
             <a href="#aboutme">
               <Icons8ChevronDown
