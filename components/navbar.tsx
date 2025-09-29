@@ -55,7 +55,6 @@ export default function Navbar() {
         {/* Logo always left */}
         <a href="#top" className={styles["logo-link"]}>
           <Drift 
-            as="svg"
             className="text-2xl md:text-3xl p-1 text-[#46399c]" 
             />
         </a>
