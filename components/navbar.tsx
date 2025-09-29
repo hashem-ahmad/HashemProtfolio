@@ -54,10 +54,7 @@ export default function Navbar() {
       <div className="max-w-screen mx-auto flex items-start justify-between px-4 py-2">
         {/* Logo always left */}
         <a href="#top" className={styles["logo-link"]}>
-          <Drift 
-            as="svg"
-            className="text-2xl md:text-3xl p-1 text-[#46399c]" 
-            />
+           <h2 className="text-2xl md:text-3xl p-1 text-[#46399c] hover:text-[#ffd900] hover:transition-colors duration-300">HASHEM</h2>
         </a>
 
         {/* Tabs (centered, only visible on >=768px) */}
