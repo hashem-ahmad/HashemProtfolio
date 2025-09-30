@@ -89,6 +89,7 @@ export default function MySkills() {
   const settings = {
     dots: false,
     infinite: true,
+    adaptiveHeight: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
