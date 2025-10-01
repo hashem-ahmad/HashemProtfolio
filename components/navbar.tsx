@@ -82,7 +82,7 @@ export default function Navbar() {
           })}
         </div>
         <button
-          className="md:hidden text-2xl text-white h-740px"
+          className="md:hidden text-2xl text-white h-740px p-10"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FiX /> : <FiMenu />}
