@@ -14,25 +14,32 @@ export default function About() {
         >
           Who I am!
         </h1>
-        <p
-          className={`${styles.pp} text-xl max-lg:text-base lg:text-base leading-relaxed max-2xl:text-lg 2xl:mt-10 lg:mt-3 max-lg:mt-3 max-md:text-base md:text-base 2xl:text-2xl max-sm:text-center`}
+        <div
+          className={`${styles.ParagraphBackground} bg-black/50 rounded-3xl p-[20px] bg-opacity-25 backdrop-blur-[10px]`}
         >
-          {"I'm Hashem Ahmed"}, and I am a Jordanian software engineering student at{" "}
-          <span className={styles.goldText}>PUST</span>. This is my first
-          semester at the university trip, and I am excited to begin this new
-          chapter in my life. I look forward to building new friendships,
-          developing my skills, and gaining valuable experiences as I integrate
-          into this community.
-          <br />I began my journey in information technology in{" "}
-          <span className={styles.goldText}>2023</span> through the BTEC
-          educational system, which gave me the opportunity to explore the
-          field. During that time, I discovered my interest in software design
-          and development, which motivated me to deepen my knowledge and build
-          skills as a UI/UX designer. Now, as I move forward, I am ready to take
-          on a new level of challenges, work hard to enhance my abilities, and
-          continue learning in order to become a <br />
-          <span className={styles.goldText}>successful software engineer</span>.
-        </p>
+          <p
+            className={`${styles.pp} text-xl text-start max-lg:text-base leading-relaxed 2xl:mt-10 lg:mt-3 max-lg:mt-3 max-md:text-base md:text-base 2xl:text-2xl max-sm:text-center max-sm:text-sm`}
+          >
+            {"I'm Hashem Ahmed"}, and I am a Jordanian software engineering
+            student at <span className={styles.goldText}>PUST</span>. This is my
+            first semester at the university trip, and I am excited to begin
+            this new chapter in my life. I look forward to building new
+            friendships, developing my skills, and gaining valuable experiences
+            as I integrate into this community.
+            <br />I began my journey in information technology in{" "}
+            <span className={styles.goldText}>2023</span> through the BTEC
+            educational system, which gave me the opportunity to explore the
+            field. During that time, I discovered my interest in software design
+            and development, which motivated me to deepen my knowledge and build
+            skills as a UI/UX designer. Now, as I move forward, I am ready to
+            take on a new level of challenges, work hard to enhance my
+            abilities, and continue learning in order to become a <br />
+            <span className={styles.goldText}>
+              successful software engineer
+            </span>
+            .
+          </p>
+        </div>
       </div>
     </section>
   );
