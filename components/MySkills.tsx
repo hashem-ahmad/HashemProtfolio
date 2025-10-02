@@ -122,9 +122,10 @@ export default function MySkills() {
                 <div
                   className={`${styles.cards} rounded-xl bg-gradient-to-b from-black to-violet-700/80 p-6 justify-self-center shadow-xl/50 hover:scale-105 cursor-grab`}
                 >
-                  <Icon
-                    className={`${styles.icons} 2xl:text-7xl max-2xl:text-5xl mb-5 2xl:mb-10 text-center justify-self-center`}
-                  />
+                  <div className="flex justify-center items-center mb-5 2xl:mb-10">
+                    <Icon className="2xl:text-7xl max-2xl:text-5xl" />
+                  </div>
+
                   <h2
                     className={`${styles.cardHeader} 2xl:text-3xl max-2xl:text-xl max-mb-5 max-lg:text-lg lg:text-lg w-full text-center mb-10`}
                   >
