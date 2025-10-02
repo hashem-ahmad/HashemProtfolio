@@ -123,15 +123,15 @@ export default function MySkills() {
                   className={`${styles.cards} rounded-xl bg-gradient-to-b from-black to-violet-700/80 p-6 justify-self-center shadow-xl/50 hover:scale-105 cursor-grab`}
                 >
                   <Icon
-                    className={`${styles.icons} 2xl:text-7xl max-2xl:text-5xl mb-5 2xl:mb-10`}
+                    className={`${styles.icons} 2xl:text-7xl max-2xl:text-5xl mb-5 2xl:mb-10 text-center justify-self-center`}
                   />
                   <h2
-                    className={`${styles.cardHeader} 2xl:text-3xl max-2xl:text-xl max-mb-5 max-lg:text-lg lg:text-lg w-full text-center max-sm:mb-10`}
+                    className={`${styles.cardHeader} 2xl:text-3xl max-2xl:text-xl max-mb-5 max-lg:text-lg lg:text-lg w-full text-center mb-10`}
                   >
                     {skill.title}
                   </h2>
                   <p
-                    className={`${styles.cardP} 2xl:text-2xl max-2xl:text-lg text-center max-lg:text-lg lg:text-lg max-md:text-base md:text-base`}
+                    className={`${styles.cardP} 2xl:text-2xl max-2xl:text-lg text-center max-lg:text-lg lg:text-lg max-md:text-base md:text-base max-sm:text-sm`}
                   >
                     {skill.description}
                   </p>
