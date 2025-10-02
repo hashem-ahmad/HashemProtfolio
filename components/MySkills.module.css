@@ -61,3 +61,8 @@
     width: 60vw;
   }
 }
+.icons{
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
