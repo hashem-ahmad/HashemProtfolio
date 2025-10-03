@@ -43,7 +43,7 @@ function NextArrow(props: React.ComponentPropsWithoutRef<"div">) {
   const { onClick } = props;
   return (
     <div
-      className={`${styles.icon} absolute top-150 left-40 max-md:top-110 max-md:left-20 max-sm:left-5 max-sm:top-90 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-110 max-sm:hidden`}
+      className={`${styles.icon} absolute top-150 left-40 max-md:top-110 max-md:left-20 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-110 max-sm:top-[50%] max-sm:left-[5%] max-sm:rotate-90 max-lg:top-[70%] max-lg:left-25 lg:top-150`}
       onClick={onClick}
     >
       <FaAngleDown className="text-6xl text-white text-shadow-xl" />
@@ -55,7 +55,7 @@ function PrevArrow(props: React.ComponentPropsWithoutRef<"div">) {
   const { onClick } = props;
   return (
     <div
-      className={`${styles.icon} absolute top-130 left-40 max-md:top-100 max-md:left-20 max-sm:left-5 max-sm:top-70 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-95 max-sm:hidden`}
+      className={`${styles.icon} absolute top-130 left-40 max-md:top-100 max-md:left-20 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-95 max-sm:top-[50%] max-sm:left-[95%] max-sm:rotate-90 max-lg:top-[65%] max-lg:left-25 lg:top-140`}
       onClick={onClick}
     >
       <FaAngleUp className="text-6xl text-white text-shadow-xl" />
@@ -81,7 +81,7 @@ export default function Project() {
       className={`${styles.Projects} h-[120vh] flex flex-col h-screen`}
     >
       <h1
-        className={`${styles.BigHeader} text-6xl font-bold mb-5 place-items-center justify-center drop-shadow-xl z-0container mx-auto text-center`}
+        className={`${styles.BigHeader} text-6xl font-bold mb-5 place-items-center justify-center drop-shadow-xl z-0container mx-auto text-center max-sm:text-5xl`}
       >
         My Projects
       </h1>
@@ -89,9 +89,9 @@ export default function Project() {
         {data.map((project, idx) => {
           return (
             <div key={idx} className="flex flex-col gap-12">
-              <div className={`${styles.projectcontainer}`}>
+              <div className={`${styles.projectcontainer} max-lg:place-items-center`}>
                 <div
-                  className={`${styles.imageContainer}  relative 2xl:left-250 2xl:top-85 2xl:w-750 max-md:w-150 md:w-150 md:left-30 max-md-top-120 md-top-120 max-2xl:left-140 2xl:left-140 max-2xl:top-55 2xl:top-55 max-lg:top-70 lg:top-70 z-0 max-2xl:w-[650px] max-lg:w-[500px] lg:w-[500px] max-lg:left-120 lg:left-120 max-2xl:h-[auto] max-sm:w-95 max-sm:left-0 max-sm:top-90`}
+                  className={`${styles.imageContainer}  relative 2xl:left-250 2xl:top-85 2xl:w-750 max-md:w-150 md:w-150  max-md-top-120 md-top-120 max-2xl:left-140 2xl:left-140 max-2xl:top-55 2xl:top-55 max-lg:top-115 max-lg:left-0 lg:top-95 z-0 max-2xl:w-[650px] max-lg:w-[500px] lg:w-[650px] lg:left-80 max-2xl:h-[auto] max-sm:hidden max-lg:place-items-center xl:left-140 xl:w-[700px]`}
                 >
                   <Image
                     src={project.image}
@@ -99,12 +99,12 @@ export default function Project() {
                     width={750}
                     height={450}
                     priority={idx === 0}
-                    className={`${styles.projectImage} z-0 cursor-pointer shadow-xl/50 hover:scale-105 transition-transform duration-300 ease-in-out`}
+                    className={`${styles.projectImage} z-0 cursor-pointer shadow-xl/50 hover:scale-105 transition-transform duration-300 ease-in-out max-sm:hidden`}
                     onClick={() => window.open(project.link, "_blank")}
                   />
                 </div>
                 <div
-                  className={`${styles.projectExContainer} relative h-auto z-10 2xl:bottom-40 2xl:left-10 max-2xl:bottom-70 2xl:bottom-70 max-lg:bottom-35 lg:bottom-35 max-2xl:left-10 2xl:left-10 max-ms:place-items-center max-sm:left-0 max-sm:bottom-25`}
+                  className={`${styles.projectExContainer} relative h-auto z-10 2xl:bottom-40 2xl:left-10 max-2xl:bottom-70 2xl:bottom-70 max-lg:bottom-15 lg:bottom-35 max-2xl:left-10 2xl:left-10 max-ms:place-items-center max-sm:left-0 max-sm:bottom-25 max-lg:place-items-center sm:bottom-20`}
                 >
                   <h2
                     className={`${styles.projectTitle} text-4xl font-bold mb-5 place-items-center justify-center text-black text-shadow-x l max-sm:mr-4`}
@@ -118,6 +118,10 @@ export default function Project() {
                       className={`${styles.paragraph} 2xl:text-2xl max-2xl:text-2xl max-lg:text-xl lg:text-xl text-shadow-xl max-sm:text-base max-sm:text-center`}
                     >
                       {project.description}
+                      <br />
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#ffd900] hover:text-[#597bf8] transition-colors duration-300 decoration-solid">
+                        View Project
+                      </a>
                     </p>
                   </div>
                 </div>
