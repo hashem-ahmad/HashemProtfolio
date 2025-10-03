@@ -63,34 +63,66 @@
   .Projects {
     padding: 10px;
     padding-top: 3vh;
-    height: auto;
+    height: 90vh;
     background-position: top;
   }
 
   .paragraphcontainer {
     flex-direction: column;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: center;
+    justify-self: center;
   }
 
   .paragraph {
     left: 0;
-    font-size: 1rem;
     text-align: center;
   }
 
   .projectTitle {
     left: 0;
-    font-size: 2rem;
+    text-align: center;
+  }
+  .projectcontainer {
+    height: auto;
+    margin-top:20vh;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1020px) {
+  .Projects {
+    padding: 10px;
+    padding-top: 7vh;
+    height: 110vh;
+    background-position: top;
+  }
+
+  .paragraphcontainer {
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .paragraph {
+    left: 0;
     text-align: center;
   }
 
-  .projectImage {
-    width: 100%;
-    height: auto;
+  .projectTitle {
+    left: 0;
+    text-align: center;
   }
-
   .projectcontainer {
+    position: relative;bottom: 15vh;
     height: auto;
+    margin-top:0vh;
+  }
+  .imageContainer{
+    justify-self: center;
   }
 }
