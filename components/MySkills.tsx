@@ -14,31 +14,31 @@ const data = [
   {
     title: "UI|UX Design",
     description:
-      "I have some experience in UI/UX software design that lets me create friendly and attractive designs while taking care of the UI/UX rules.",
+      "I have experience in UI/UX design, focusing on creating intuitive, user-friendly, and visually appealing interfaces. I apply established design principles and best practices to ensure seamless user journeys, balancing functionality with aesthetics to deliver engaging digital experiences.",
     icon: MdOutlineDesignServices,
   },
   {
     title: "Frontend-Development",
     description:
-      "To apply what I have design or any design I have the experiance to integrate HTML, CSS and JS to converting the project from design to an effective website.",
+      "specialize in transforming creative ideas and professional designs into fully functional, responsive, and user-friendly websites. With hands-on experience in HTML, CSS, and JavaScript, I'm skilled at integrating modern front-end technologies to build dynamic interfaces that bring designs to life. My goal is to deliver clean, efficient, and visually engaging code that enhances user experience and meets project objectives with precision and creativity.",
     icon: FaCode,
   },
   {
     title: "React Development",
     description:
-      "To improve my skills in web development, I started learning React, and this portfolio is my first project using it.",
+      "I began learning React to strengthen my web development skills, and this portfolio represents my first project built with the framework. Through this experience, I gained practical knowledge of component-based architecture, state management, and reusable UI elements, laying a strong foundation for building scalable and dynamic web applications.",
     icon: FaReact,
   },
   {
     title: "Python",
     description:
-      "Python is the first programming language that I have learned, I know how to develop basic systems such as management systems and others. I have started with the Python Power-Up course.",
+      "Python is the first programming language I learned, providing me with a solid foundation in programming concepts. I have built simple projects, including basic management systems, and continue to expand my skills through practical practice and structured learning, starting with the Python Power-Up course.",
     icon: AiOutlinePython,
   },
   {
     title: "Photoshop and photo and posters design",
     description:
-      "I have basic skills and experience with Adobe Photoshop, which allow me to make photo edits and adjustments that can be used effectively in web design.",
+      "I have foundational skills in Adobe Photoshop, enabling me to perform photo editing, image adjustments, and visual enhancements. I apply these skills to create assets that support web design projects and improve the overall visual presentation of digital content.",
     icon: TbBrandAdobePhotoshop,
   },
   {
@@ -50,7 +50,7 @@ const data = [
   {
     title: "research",
     description:
-      "I believe that anything I want to learn can be found through deep research on the internet. During my two years of studying in the BTEC education system, I improved my research skills, making them a strong asset that can support me in both my life and future work.",
+      "I consider research one of my strongest skills, as I believe that any knowledge can be acquired through effective exploration and analysis of available resources. During my two years in the BTEC education system, I enhanced my ability to conduct structured, in-depth research, making it a valuable asset that supports both my personal development and professional growth.",
     icon: GiArchiveResearch,
   },
 ];
@@ -109,7 +109,7 @@ export default function MySkills() {
       className={`${styles.skills} flex flex-col gap-10 py-20`}
     >
       <h1
-        className={`${styles.header} text-6xl font-bold mb-5 text-center justify-self-center`}
+        className={`${styles.header} text-6xl font-bold mb-5 text-center justify-self-center max-sm:text-5xl`}
       >
         My Skills
       </h1>
@@ -132,7 +132,7 @@ export default function MySkills() {
                     {skill.title}
                   </h2>
                   <p
-                    className={`${styles.cardP} 2xl:text-2xl max-2xl:text-lg text-center max-lg:text-lg lg:text-lg max-md:text-base md:text-base max-sm:text-sm`}
+                    className={`${styles.cardP} 2xl:text-xl text-sm text-center max-sm:text-xs`}
                   >
                     {skill.description}
                   </p>
