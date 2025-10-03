@@ -8,9 +8,9 @@ export default function About() {
       data-bg="light"
       className={`${styles.about} flex flex-col h-screen`}
     >
-      <div className="self-end z-10 2xl:w-1/2 max-2xl:w-1/2 max-lg:w-3/5 lg:w-3/5 px-6 text-right max-sm:w-full max-sm:self-center">
+      <div className={`${styles.bigContainer} self-end z-10 2xl:w-1/2 max-2xl:w-1/2 max-lg:w-3/5 lg:w-3/5 px-6 text-right max-sm:w-full max-sm:self-center`}>
         <h1
-          className={`${styles.header} 2xl:text-6xl max-2xl:text-5xl max-lg:text-4xl lg:text-4xl max-lg:ml-5 lg:ml-5 max-md:m-5 md:m-5 font-bold text-start max-sm:text-center`}
+          className={`${styles.header} 2xl:text-6xl max-2xl:text-5xl max-lg:text-4xl lg:text-4xl max-lg:ml-5 lg:ml-5 max-md:m-5 md:m-5 font-bold text-start max-sm:text-center max-sm:text-5xl`}
         >
           Who I am!
         </h1>
