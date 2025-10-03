@@ -5,14 +5,14 @@
   background-position: center;
   padding: 20px;
   padding-top: 10vh;
-  height: 100vh;
+  height: 120vh;
 }
 .header {
   color: #ffffff;
   text-shadow: rgba(132, 176, 202, 0.9) 3px 6px 9px;
 }
 .sliderContainer {
-  height: 65vh;
+  height: 80vh;
   max-height: 70vh;
   width: 100%;
   max-width: 100%;
@@ -44,7 +44,7 @@
 }
 .cards {
   width: 23vw;
-  height: 65vh;
+  height: 70vh;
   justify-items: center;
   box-shadow: rgba(0, 0, 0, 0.9) 6px 9px 9px;
   margin: 15px;
@@ -61,7 +61,7 @@
     width: 60vw;
   }
 }
-.icons{
+.icons {
   display: flex;
   justify-content: center;
   align-items: center;
