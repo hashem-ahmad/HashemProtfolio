@@ -43,7 +43,7 @@ function NextArrow(props: React.ComponentPropsWithoutRef<"div">) {
   const { onClick } = props;
   return (
     <div
-      className={`${styles.icon} absolute top-150 left-40 max-md:top-110 max-md:left-20 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-110 max-sm:top-[50%] max-sm:left-[5%] max-sm:rotate-90 max-lg:top-[70%] max-lg:left-25 lg:top-150`}
+      className={`${styles.icon} absolute top-150 left-40 max-md:top-110 max-md:left-20 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-110 max-sm:top-[50%] max-sm:left-[5%] max-sm:rotate-90 max-lg:top-[70%] max-lg:left-25 lg:top-120`}
       onClick={onClick}
     >
       <FaAngleDown className="text-6xl text-white text-shadow-xl" />
@@ -55,7 +55,7 @@ function PrevArrow(props: React.ComponentPropsWithoutRef<"div">) {
   const { onClick } = props;
   return (
     <div
-      className={`${styles.icon} absolute top-130 left-40 max-md:top-100 max-md:left-20 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-95 max-sm:top-[50%] max-sm:left-[95%] max-sm:rotate-90 max-lg:top-[65%] max-lg:left-25 lg:top-140`}
+      className={`${styles.icon} absolute top-130 left-40 max-md:top-100 max-md:left-20 transform -translate-x-1/2 z-10 cursor-pointer max-2xl:top-95 max-sm:top-[50%] max-sm:left-[95%] max-sm:rotate-90 max-lg:top-[65%] max-lg:left-25 lg:top-110`}
       onClick={onClick}
     >
       <FaAngleUp className="text-6xl text-white text-shadow-xl" />
@@ -89,9 +89,11 @@ export default function Project() {
         {data.map((project, idx) => {
           return (
             <div key={idx} className="flex flex-col gap-12">
-              <div className={`${styles.projectcontainer} max-lg:place-items-center`}>
+              <div
+                className={`${styles.projectcontainer} max-lg:place-items-center`}
+              >
                 <div
-                  className={`${styles.imageContainer}  relative 2xl:left-250 2xl:top-85 2xl:w-750 max-md:w-150 md:w-150  max-md-top-120 md-top-120 max-2xl:left-140 2xl:left-140 max-2xl:top-55 2xl:top-55 max-lg:top-115 max-lg:left-0 lg:top-95 z-0 max-2xl:w-[650px] max-lg:w-[500px] lg:w-[650px] lg:left-80 max-2xl:h-[auto] max-sm:hidden max-lg:place-items-center xl:left-140 xl:w-[700px]`}
+                  className={`${styles.imageContainer}  relative 2xl:left-250 2xl:top-85 2xl:w-750 max-md:w-150 md:w-150  max-md-top-120 md-top-120 max-2xl:left-140 2xl:left-140 max-2xl:top-55 2xl:top-55 max-lg:top-115 max-lg:left-0 lg:top-60 z-0 max-2xl:w-[650px] max-lg:w-[500px] lg:w-[650px] lg:left-80 max-2xl:h-[auto] max-sm:hidden max-lg:place-items-center xl:left-140 xl:w-[700px]`}
                 >
                   <Image
                     src={project.image}
@@ -104,7 +106,7 @@ export default function Project() {
                   />
                 </div>
                 <div
-                  className={`${styles.projectExContainer} relative h-auto z-10 2xl:bottom-40 2xl:left-10 max-2xl:bottom-70 2xl:bottom-70 max-lg:bottom-15 lg:bottom-35 max-2xl:left-10 2xl:left-10 max-ms:place-items-center max-sm:left-0 max-sm:bottom-25 max-lg:place-items-center sm:bottom-20`}
+                  className={`${styles.projectExContainer} relative h-auto z-10 2xl:bottom-40 2xl:left-10 max-2xl:bottom-70 2xl:bottom-70 max-lg:bottom-15 lg:bottom-75 max-2xl:left-10 2xl:left-10 max-ms:place-items-center max-sm:left-0 max-sm:bottom-25 max-lg:place-items-center sm:bottom-20`}
                 >
                   <h2
                     className={`${styles.projectTitle} text-4xl font-bold mb-5 place-items-center justify-center text-black text-shadow-x l max-sm:mr-4`}
@@ -119,7 +121,12 @@ export default function Project() {
                     >
                       {project.description}
                       <br />
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#ffd900] hover:text-[#597bf8] transition-colors duration-300 decoration-solid">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#ffd900] hover:text-[#597bf8] transition-colors duration-300 decoration-solid"
+                      >
                         View Project
                       </a>
                     </p>
